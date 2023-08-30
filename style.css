@@ -1,0 +1,15 @@
+body{
+    background-color: aqua;
+}
+
+p{
+    color:chartreuse;
+}
+
+h1{
+    text-align: center;
+}
+
+.altP{
+    text-align: right;
+}
