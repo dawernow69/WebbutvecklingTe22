@@ -2,14 +2,62 @@ body{
     background-color: aqua;
 }
 
-p{
-    color:chartreuse;
+.wrapper{
+    background-color: bisque;
+    width:90%;
+    margin:0 auto;
+    display:grid;
+    grid-template-rows: 80px 50px auto 50px;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "footer";
+}
+
+header{
+    background-color: burlywood;
+    grid-area: header;
+}
+
+nav{
+    background-color: darkorange;
+    grid-area: nav;
+}
+
+nav > ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height:100%;
+    margin: 0;
+    padding:0;
+}
+
+nav li{
+    list-style-type: none;
+    text-align: center;
+    display: grid;
+    align-items: stretch;
+}
+
+main{
+    background-color: khaki;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+}
+
+footer{
+    background-color: thistle;
+    grid-area: footer;
 }
 
 h1{
     text-align: center;
 }
 
-.altP{
-    text-align: right;
+
+img{
+    width: 50px;
 }
